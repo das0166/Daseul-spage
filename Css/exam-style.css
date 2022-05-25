@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding: 0;}
+html, body{overflow-y: hidden;}
+.header{position:fixed; width: 100%; top: 0; z-index: 1;}
+.header ul::after{content: ""; clear: both; display: block;}
+.header li{display: inline;}
+.header h1{margin-top: 70px; margin-left: 100px; font-size: 30px; position: fixed; width: 225px;}
+.header .logo{text-decoration: none; color: #fff; font-family: 'SDSamliphopangche_Outline', sans-serif;}
+.menu{position: fixed; top: 0; right:0; left: 0; padding-top: 80px; height: 80px; text-align-last:center; font-size: 20px;}
+.menu *{display: inline;}
+.menu li{padding: 35px;}
+.menu a{text-decoration: none; font-style: italic; font-weight: lighter; color: #fff;}
+.menu a:hover{border-bottom: 2px solid #906666; padding-bottom: 10px;}
+.one{text-align: center; padding-top: 285px;}
+.one .box{border: 2px solid rgba(255,255,255,0.5); display: inline-block; background-color: rgba(255,255,255,0.1); width: 300px; height: 300px; padding: 0.5rem; border-radius: 80px;}
+.one img{width: 300px; height: 300px; border-radius: 80px;}
+.one h2{padding-top: 40px; font-style: italic; font-weight: lighter; color: #fff;}
+.two{padding-top: 245px;}
+.two h2{text-align: center; color:#906666; font-family: 'Cafe24Oneprettynight',serif;}
+.two .intro{padding-top: 30px; display: flex;}
+.two .left{padding-left: 560px; display: inline-block;}
+.left img{width: 300px; height: 300px; border-radius: 30px;}
+.left p{margin-top: 19px; font-size: 20px; padding: 6px; border-left: 2px solid #906666; height: 132px; font-family: 'Cafe24Oneprettynight',serif; font-weight: bold;}
+.right{ width: 570px; height: 300px; display: inline-block; padding-left: 100px; padding-top: 100px;}
+.right p{font-size: 20px; font-family: 'Cafe24Oneprettynight',serif; font-weight: bold;}
+.three{padding-top: 200px;}
+.card{text-align: center;}
+.card h2{font-family: 'Cafe24Oneprettynight',serif; color: #8f6868; }
+.sec-card{padding-top: 50px;}
+.four{padding-top: 350px; }
+.four .contact{display: flex; justify-content:center;}
+.four img{height: 200px; width: 200px;}
+.naver{height: 280px; width: 300px; text-align: center; margin-right: 20px;}
+.github{height: 280px; width: 300px;text-align: center; margin-left: 20px;}
+.contact a{font-family:'Cafe24Oneprettynight', serif; font-size: 20px;}
+.naver:hover{border-bottom: 4px solid #8f6868;}
+.github:hover{border-bottom: 4px solid #8f6868;}
+
+.content div{position: relative;}
+.content .one{
+    background-color: #bfc8d7;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content .two{
+    background-color: #e2d2d2;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content .three{
+    background-color: #e3e2b4;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content .four{
+    background-color: #a2b59f;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider {
+    width: 50%;
+    margin: 20px auto 0;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 200px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+   
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* Media Query - 원하는 부분 한 부분만 적용해도 인정. 단, font 요소들은 제외. 아래의 내용을 수정/추가/삭제해도 무방 */
+@media only screen and (max-width:1280px) { 
+
+}
+
+@media only screen and (min-width:1250.1px) and (max-width:1550px){ 
+    .two .left{padding-left: 260px;}
+	
+}
+
+@media only screen and (min-width:1040.1px) and (max-width:1250px){ 
+    .two .left{padding-left: 60px;}
+    .menu{text-align-last: right; padding-right:10% ;}
+}
+
+@media only screen and (min-width:640.1px) and (max-width:1040px){ 
+    .two .left{padding-left:10px;}
+    .right {padding-top:0;}
+    .menu{padding-top: 140px; }
+    .header{text-align: center;}
+    .menu li{margin: 2%;}
+    .header{padding-left:20%}
+  
+}
+
+@media only screen and (max-width:640px){ 
+    .two{padding-top: 350px;}
+    .two .left{padding-left:10px;}
+    .two img{width: 200px; height: 200px;}
+    .two .right{padding-right:10px;}
+    
+    .right {padding-top:20px; padding-left: 10px;}
+    .menu{padding-top: 140px; }
+    .header{text-align: center;}
+    .menu li{padding: 20px;}
+    .header{padding-left:10%}
+    .right p{font-size: 17px;}
+    .four img{width: 100px; height: 100px;}
+    .naver{width:200px; height: 160px;}
+    .github{width:200px; height: 160px;}
+    .naver:hover{border-bottom: 2px solid #8f6868;}
+    .github:hover{border-bottom: 2px solid #8f6868;}
+    .contact a{font-size: 15px;}
+}
